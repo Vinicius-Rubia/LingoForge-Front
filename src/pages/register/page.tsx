@@ -1,11 +1,12 @@
+import { IMAGES } from "@/constants/images";
 import { GalleryVerticalEnd } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RegisterForm } from "./register-form";
 
 export function RegisterPage() {
   return (
-    <section className="grid min-h-svh lg:grid-cols-2">
-      <div className="flex flex-col gap-4 p-6 md:p-10">
+    <section className="grid min-h-svh lg:grid-cols-5">
+      <div className="flex flex-col gap-4 p-6 md:p-10 lg:col-span-2">
         <div className="flex justify-center gap-2 md:justify-start">
           <Link to="/" className="flex items-center gap-2 font-medium">
             <div className="bg-primary text-primary-foreground flex size-6 items-center justify-center rounded-md">
@@ -20,10 +21,10 @@ export function RegisterPage() {
           </div>
         </div>
       </div>
-      <div className="bg-muted relative hidden lg:block">
+      <div className="bg-muted relative hidden lg:block lg:col-span-3">
         <img
-          src="/placeholder.svg"
-          alt="Image"
+          src={IMAGES.BackgroundTexture}
+          alt="Textura"
           className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
         />
       </div>
