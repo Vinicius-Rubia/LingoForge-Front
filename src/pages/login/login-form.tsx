@@ -51,12 +51,6 @@ export function LoginForm({
           Login com Google
         </Button>
       </div>
-      <div className="text-center text-sm">
-        Não tem uma conta?{" "}
-        <Link to="/register" className="underline underline-offset-4">
-          Inscreva-se agora
-        </Link>
-      </div>
     </form>
   );
 }
